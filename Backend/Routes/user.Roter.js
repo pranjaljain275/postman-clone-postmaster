@@ -1,12 +1,17 @@
 const express=require("express")
+const fs=require("fs")
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const {UserModel}=require("../Model/user.model")
-const {authenticate}=require("./Middleware/authentication.middleware")
+const {passport}=require("../Config/google-oauth")
 
 const userRouter=express.Router()
 
 userRouter.use(express.json())
+
+userRouter.get("/",(req,res)=>{
+    res.send("user")
+})
 
 userRouter.post("/signup",async(req,res)=>{
     const {email,username,password}=req.body
@@ -50,6 +55,16 @@ userRouter.post("/login",async(req,res)=>{
         console.log(err)
     }
 })
+
+userRouter.get("/logout",(req,res)=>{
+    const token=req.headers.authorization
+    const blacklisted=JSON.parse(fs.readFileSync("../blacklist.json","utf-8"))
+    blacklisted.push(token)
+    fs.writeFileSync("../blacklist.json",JSON.stringify(blacklisted))
+    res.send("logged out successfully")
+})
+
+
 
 module.exports={
     userRouter
