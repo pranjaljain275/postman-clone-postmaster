@@ -1,0 +1,51 @@
+.div1b{
+    display: grid;
+    margin-bottom: 50px;
+}
+.div1b a {
+    grid-template-columns: repeat(1fr);
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+.div1c{
+    display: grid;
+}
+.div1c a {
+    grid-template-columns: repeat(1fr);
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+.container1{
+    display: flex;
+}
+.div2b{
+    display: flex;
+}
+.div4{
+    text-align: center;
+}
+.div5{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+}
+.div5a a{
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+.div5b a{
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+.div5c a{
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+.div5d a{
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
+.div5e a{
+    text-decoration: none;
+    color: rgb(39, 37, 37);
+}
