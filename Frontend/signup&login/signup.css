@@ -19,6 +19,29 @@
     padding: 45px 45px 10px 45px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
+.part2>div{
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.part2>div>a{
+    align-self: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(57, 127, 241);
+    font-weight: 600;
+}
+
+
+
+
+
+
 input{
     background-color:rgb(250, 250, 250);
     padding: 15px 5px 15px 10px;
@@ -53,7 +76,7 @@ button{
     border-radius: 5px;
 }
 .head{
-    font-size: 140%;
+    font-size: 130%;
     font-weight: 700;
 }
 .c{

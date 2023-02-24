@@ -5,7 +5,6 @@ const { passport } = require("./Config/google-oauth")
 const app = express()
 const port = 7575
 const cors = require('cors')
-
 const { postman } = require('./Routes/postman.router')
 app.use("/user", userRouter)
 app.use(express.json())
