@@ -1,10 +1,11 @@
 const express=require("express")
+const cors = require('cors')
 const {connection}=require("./Config/db");
 const {userRouter}=require("./Routes/user.Roter");
 const {passport}=require("./Config/google-oauth")
 const app=express()
 const port=7575
-
+app.use(cors())
 app.use("/user",userRouter)
 
 app.get('/auth/google',

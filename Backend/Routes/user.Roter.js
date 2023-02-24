@@ -16,13 +16,18 @@ userRouter.get("/",(req,res)=>{
 userRouter.post("/signup",async(req,res)=>{
     const {email,username,password}=req.body
     try{
+        const useremail=await UserModel.findOne({email})
+        if(useremail){
+           return res.send({msg:"User already exits"})
+        }
         bcrypt.hash(password, 5, async function(err, hash) {
            if(err){
             res.send("error in signup")
            }else{
             const user=UserModel({email,username,password:hash})
             await user.save()
-            res.send("Signed up successful")
+            console.log(user)
+            res.send({msg:"Signed up successful"})
            }
         });
     }catch(err){
