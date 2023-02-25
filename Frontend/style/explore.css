@@ -2,6 +2,9 @@ section {
   margin: auto;
   width: 85%;
 }
+button {
+  cursor: pointer;
+}
 .explore {
   display: flex;
   align-items: center;
@@ -28,7 +31,8 @@ section {
 
 .exploredata {
   display: flex;
-  align-items: baseline;}
+  align-items: baseline;
+}
 .boxfix {
   box-sizing: content-box;
   padding: 32px 0;
@@ -51,6 +55,9 @@ section {
   cursor: pointer;
 }
 .boxfix h2:hover {
+  background-color: #fff1eb;
+}
+#bgcolor {
   background-color: #fff1eb;
 }
 .boxfix h3 {
