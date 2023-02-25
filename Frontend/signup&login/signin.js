@@ -7,11 +7,14 @@ async function login(event){
         let email=document.querySelector("#email").value
         let password=document.querySelector("#password").value
 
+        if(email=="" || password==""){
+            alert("Fill the details correctly")
+            return
+        }
+
         let logdata={
             email,password
         }
-
-        
 
         let logurl="http://localhost:7575/user/login"
 
@@ -24,7 +27,7 @@ async function login(event){
         })
         let data=await res.json()
         alert("login Success")
-        window.location=("index.html")
+        window.location=("../index.html")
 
     }catch(err){
         console.log("err",err)

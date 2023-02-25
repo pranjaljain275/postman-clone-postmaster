@@ -70,7 +70,6 @@ userRouter.get("/logout",(req,res)=>{
 })
 
 
-
 module.exports={
     userRouter
 }
