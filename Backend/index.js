@@ -10,8 +10,7 @@ const filePath = path.join(
   __dirname,
   "..",
   "Frontend",
-  "signup&login",
-  "signup.html"
+  "index.html"
 );
 app.use(cors());
 // app.use(express.static(__dirname +   "..",
