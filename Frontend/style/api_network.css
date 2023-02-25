@@ -1,0 +1,40 @@
+.apinetwork {
+    text-align: center;
+    margin: auto;
+    width: 30%;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.apinetwork img {
+    margin-bottom: 16px;
+}
+.apinetwork h2 {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.apinetwork p {
+    font-size: 13px;
+    margin-bottom: 16px;
+    color: rgb(63, 63, 63);
+}
+.apinetwork button:nth-child(4) {
+    border: 0.25px solid rgb(194, 192, 192);
+    background-color: rgb(255, 108, 55);
+    color: rgb(255, 255, 255);
+}
+.apinetwork button:nth-child(4):hover {
+    background-color: rgb(191, 77, 35);
+}
+.apinetwork button {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 13px;
+    padding: 8px 0;
+    width: 130px;
+    border: 0.25px solid rgb(194, 192, 192);
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
