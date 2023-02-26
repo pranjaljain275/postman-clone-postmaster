@@ -1,288 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script/dashboard.js" defer></script>
-    <script src="script/header-footer.js" defer></script>
-    <link rel="stylesheet" href="style/dashboard.css" />
-    <link rel="stylesheet" href="style/header-footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
-    <title>Postman Clone</title>
-  </head>
 
-  <body>
-    <header></header>
-    <nav></nav>
-    <div class="container">
-      <div class="upper-div">
-        <div class="workspace-div">
-          <div class="upper-workspace-div">
-            <i class="fa-solid fa-user"></i>
-            <p>MyWorkspace</p>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="script/dashboard.js" defer></script>
+  <script src="script/header-footer.js" defer></script>
+  <link rel="stylesheet" href="style/dashboard.css" />
+  <link rel="stylesheet" href="style/header-footer.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <title>Postman Clone</title>
+</head>
+
+<body>
+  <header></header>
+  <div class="container">
+    <div class="upper-div">
+      <div class="workspace-div">
+        <div class="upper-workspace-div"><i class="fa-solid fa-user"></i>
+          <p>MyWorkspace</p>
+        </div>
+        <div>
+          <div>New</div>
+          <div>Import</div>
+        </div>
+      </div>
+      <div class="middle-div">
+        <div>
           <div>
-            <div>New</div>
-            <div>Import</div>
+            <i class="fa-solid fa-file"></i>
+            <p>Collections</p>
+          </div>
+          <div><i class="fa-solid fa-tape"></i>
+            <p>APIs</p>
+          </div>
+          <div><i class="fa-solid fa-seedling"></i>
+            <p>Enviroments</p>
+          </div>
+          <div><i class="fa-solid fa-copy"></i>
+            <p>Mock servers</p>
+          </div>
+          <div><i class="fa-solid fa-tv"></i>
+            <p>Monitors</p>
+          </div>
+          <div><i class="fa-solid fa-bars-staggered"></i>
+            <p>Flows</p>
+          </div>
+          <div><i class="fa-solid fa-ghost"></i>
+            <p>History</p>
           </div>
         </div>
-        <div class="middle-div">
+        <div class="middle-symbol-div">
           <div>
             <div>
-              <i class="fa-solid fa-file"></i>
-              <p>Collections</p>
+              <div><i class="fa-solid fa-plus"></i></div>
+              <div><i class="fa-solid fa-bars-staggered"></i></div>
             </div>
-            <div>
-              <i class="fa-solid fa-tape"></i>
-              <p>APIs</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-seedling"></i>
-              <p>Enviroments</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-copy"></i>
-              <p>Mock servers</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-tv"></i>
-              <p>Monitors</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-bars-staggered"></i>
-              <p>Flows</p>
-            </div>
-            <div>
-              <i class="fa-solid fa-ghost"></i>
-              <p>History</p>
-            </div>
+            <div><i class="fa-solid fa-bars-progress"></i></div>
           </div>
-          <div class="middle-symbol-div">
+          <div>
             <div>
-              <div>
-                <div><i class="fa-solid fa-plus"></i></div>
-                <div><i class="fa-solid fa-bars-staggered"></i></div>
-              </div>
-              <div><i class="fa-solid fa-bars-progress"></i></div>
+              <div>></div>
+              <div>New Collection</div>
             </div>
-            <div>
-              <div>
-                <div>></div>
-                <div>New Collection</div>
-              </div>
-              <div></div>
-            </div>
+            <div></div>
           </div>
         </div>
       </div>
-      <div class="p-4">
-        <!-- <form class="data-form"> -->
-        <div class="input-group mb-4">
-          <select class="form-select flex-grow-0 w-auto" data-method>
-            <option value="GET" selected>GET</option>
-            <option value="POST">POST</option>
-            <option value="PUT">PUT</option>
-            <option value="PATCH">PATCH</option>
-            <option value="DELETE">DELETE</option>
-          </select>
-          <input
-            data-url
-            required
-            class="form-control"
-            type="url"
-            placeholder="https://example.com"
-          />
-          <button onclick="runFunction()" class="btn btn-primary">Send</button>
-        </div>
-        <div class="nav-object">
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                style="color: #f97316"
-                id="query-params-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#query-params"
-                type="button"
-                role="tab"
-                aria-controls="query-params"
-                aria-selected="true"
-              >
-                Body
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="request-headers-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#request-headers"
-                type="button"
-                role="tab"
-                aria-controls="request-headers"
-                aria-selected="false"
-              >
-                Headers
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="json-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#json"
-                type="button"
-                role="tab"
-                aria-controls="json"
-                aria-selected="false"
-              >
-                JSON
-              </button>
-            </li>
-          </ul>
-          <!-- Workinf for contents -->
-          <div class="tab-content p-3 border-top-0 border">
-            <div
-              class="tab-pane fade show active"
-              id="query-params"
-              role="tabpanel"
-              aria-labelledby="query-params-tab"
-            >
-              <div data-query-params>
-                <textarea
-                  style="font-size: 16px"
-                  name=""
-                  placeholder="ENTER YOUR BODY DATA HERE!!"
-                  class="body"
-                  id=""
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </div>
-              <!-- <button data-add-query-param-btn class="mt-2 btn btn-outline-success" type="button">Add</button> -->
+    </div>
+    <div class="p-4">
+      <!-- <form class="data-form"> -->
+      <!-- <form class="data-form"> -->
+      <!-- <form class="data-form"> -->
+      <div class="input-group mb-4">
+        <select class="form-select flex-grow-0 w-auto" data-method>
+          <option value="GET" selected>GET</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="PATCH">PATCH</option>
+          <option value="DELETE">DELETE</option>
+          <option value="DELETE">HEAD</option>
+          <option value="DELETE">OPTIONS</option>
+          <option value="DELETE">PROFIND</option>
+          <option value="DELETE">CUSTOM</option>
+        </select>
+        <input data-url required class="form-control" type="url" placeholder="https://example.com" />
+        <button onclick="runFunction()" class="btn btn-primary">Send</button>
+      </div>
+      <div class="nav-object">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" style="color: #F97316;" id="query-params-tab" data-bs-toggle="tab"
+              data-bs-target="#query-params" type="button" role="tab" aria-controls="query-params"
+              aria-selected="true">Body</button>
+
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="request-headers-tab" data-bs-toggle="tab" data-bs-target="#request-headers"
+              type="button" role="tab" aria-controls="request-headers" aria-selected="false">Headers</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="json-tab" data-bs-toggle="tab" data-bs-target="#json" type="button" role="tab"
+              aria-controls="json" aria-selected="false">JSON</button>
+          </li>
+        </ul>
+        <!-- Workinf for contents -->
+        <div class="tab-content p-3 border-top-0 border">
+          <div class="tab-pane fade show active" id="query-params" role="tabpanel" aria-labelledby="query-params-tab">
+            <div data-query-params><textarea style="font-size: 16px;" name="" placeholder="ENTER YOUR BODY DATA HERE!!"
+                class="body" id="" cols="30" rows="10"></textarea>
             </div>
-            <!-- <div class="tab-pane fade" id="request-headers" role="tabpanel"
+            <!-- <button data-add-query-param-btn class="mt-2 btn btn-outline-success" type="button">Add</button> -->
+          </div>
+          <!-- <div class="tab-pane fade" id="request-headers" role="tabpanel"
                             aria-labelledby="request-headers-tab">
                             <div data-request-headers></div>
                             <button data-add-request-header-btn class="mt-2 btn btn-outline-success"
                                 type="button">Add</button>
                         </div> -->
-            <div
-              class="tab-pane fade"
-              id="json"
-              role="tabpanel"
-              aria-labelledby="json-tab"
-            >
-              <div
-                data-json-request-body
-                class="overflow-auto"
-                style="max-height: 200px"
-              ></div>
-            </div>
+          <div class="tab-pane fade" id="json" role="tabpanel" aria-labelledby="json-tab">
+            <div data-json-request-body class="overflow-auto" style="max-height: 200px;"></div>
           </div>
         </div>
-        <!-- </form> -->
+      </div>
+      <!-- </form> -->
 
-        <!-- Response HTML -->
-        <div class="mt-5 d-none" data-response-section>
-          <h3>Response</h3>
-          <div class="d-flex my-2">
-            <div class="me-3">
-              Status: <span style="color: green" data-status></span>
-            </div>
-            <div class="me-2">
-              Time: <span style="color: green" data-time></span>ms
-            </div>
-            <div class="me-1">
-              Size: <span style="color: green" data-size></span>
-            </div>
+      <!-- Response HTML -->
+      <div class="mt-5 d-none" data-response-section>
+        <h3>Response</h3>
+        <div class="d-flex my-2">
+          <div class="me-3">
+            Status: <span style="color: green;" data-status></span>
           </div>
+          <div class="me-2">
+            Time: <span style="color: green;" data-time></span>ms
+          </div>
+          <div class="me-1">
+            Size: <span style="color: green;" data-size></span>
+          </div>
+        </div>
 
-          <ul class="nav nav-tabs" role="tablist">
-            <!-- for body -->
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="body-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#body"
-                type="button"
-                role="tab"
-                style="color: #f97316"
-                aria-controls="body"
-                aria-selected="true"
-              >
-                Response Body
-              </button>
-            </li>
-            <!-- for Headers -->
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="response-headers-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#response-headers"
-                type="button"
-                role="tab"
-                aria-controls="response-headers"
-                aria-selected="false"
-              >
-                Response Header
-              </button>
-            </li>
-          </ul>
 
-          <div class="tab-content p-3 border-top-0 border below">
-            <div
-              class="tab-pane fade show active"
-              id="body"
-              role="tabpanel"
-              aria-labelledby="body-tab"
-            >
-              <div
-                data-json-response-body
-                class="overflow-auto"
-                style="max-height: 200px"
-              ></div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="response-headers"
-              role="tabpanel"
-              aria-labelledby="response-headers-tab"
-            >
-              <div
-                style="
-                  display: grid;
-                  grid-template-columns: auto 1fr;
-                  gap: 0.5rem 2rem;
-                "
-                data-response-headers
-              ></div>
+        <ul class="nav nav-tabs" role="tablist">
+          <!-- for body -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="body-tab" data-bs-toggle="tab" data-bs-target="#body" type="button"
+              role="tab" style="color: #F97316;" aria-controls="body" aria-selected="true">Response Body</button>
+          </li>
+          <!-- for Headers -->
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="response-headers-tab" data-bs-toggle="tab" data-bs-target="#response-headers"
+              type="button" role="tab" aria-controls="response-headers" aria-selected="false">Response Header</button>
+          </li>
+        </ul>
+
+        <div class="tab-content p-3 border-top-0 border below">
+          <div class="tab-pane fade show active" id="body" role="tabpanel" aria-labelledby="body-tab">
+            <div data-json-response-body class="overflow-auto" style="max-height: 200px;"></div>
+          </div>
+          <div class="tab-pane fade" id="response-headers" role="tabpanel" aria-labelledby="response-headers-tab">
+            <div style="display: grid; grid-template-columns: auto 1fr; gap: .5rem 2rem;" data-response-headers>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- template for query params -->
-      <template data-key-value-template>
-        <div class="input-group my-2" data-key-value-pair>
-          <input type="text" data-key class="form-control" placeholder="Key" />
-          <input
-            type="text"
-            data-value
-            class="form-control"
-            placeholder="Value"
-          />
-          <button type="button" data-remove-btn class="btn btn-outline-danger">
-            Remove
-          </button>
-        </div>
-      </template>
     </div>
-  </body>
+
+    <!-- template for query params -->
+    <template data-key-value-template>
+      <div class="input-group my-2" data-key-value-pair>
+        <input type="text" data-key class="form-control" placeholder="Key" />
+        <input type="text" data-value class="form-control" placeholder="Value" />
+        <button type="button" data-remove-btn class="btn btn-outline-danger">Remove</button>
+      </div>
+    </template>
+  </div>
+</body>
+
 </html>
