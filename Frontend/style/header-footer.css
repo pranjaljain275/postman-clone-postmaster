@@ -1,5 +1,5 @@
 /* Header */
-* {
+.navbar * {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -8,13 +8,14 @@ a {
   text-decoration: none;
   color: black;
 }
-input {
+.navbar input {
   padding: 8px 18px;
   height: 20px;
   width: 150px;
   background-color: rgb(231, 231, 231);
   border: 1px solid rgb(195, 193, 193);
   border-radius: 4px;
+  font-size: 12px;
 }
 .navbar i {
   margin-right: 28px;

@@ -3,6 +3,7 @@ const cors = require("cors");
 const { connection } = require("./Config/db");
 const { userRouter } = require("./Routes/user.Roter");
 const { passport } = require("./Config/google-oauth");
+require("dotenv").config()
 const app = express();
 const port = 7575;
 const path = require("path");
@@ -41,7 +42,7 @@ app.get("/", (req, res) => {
   res.send("Welcome");
 });
 
-app.listen(port, async () => {
+app.listen(process.env.port, async () => {
   try {
     await connection;
     console.log("connected to Database");
