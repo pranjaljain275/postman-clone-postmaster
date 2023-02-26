@@ -3,33 +3,42 @@
   background-color: rgb(242, 242, 242);
   padding-top: 70px;
 }
+
 .main {
   width: 62%;
   display: flex;
   margin: auto;
   background-color: white;
 }
+
 .part1 {
   padding: 35px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+button {
+  cursor: pointer;
+}
+
 .part2 {
   width: 70%;
   padding: 45px 45px 10px 45px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.part2 > div {
+.part2>div {
   display: flex;
   justify-content: space-between;
   border: 0px solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.part2 > div > a {
+
+.part2>div>a {
   align-self: center;
 }
+
 a {
   text-decoration: none;
   color: rgb(57, 127, 241);
@@ -44,10 +53,12 @@ input {
   border-radius: 6px;
   font-size: larger;
 }
+
 input:focus {
   outline: none !important;
   border: 1px solid rgb(241, 90, 34);
 }
+
 button {
   width: 100%;
   padding: 15px 0px 15px 0px;
@@ -55,25 +66,30 @@ button {
   font-size: 120%;
   border: 0px solid rgb(241, 90, 34);
 }
+
 .btn {
   color: white;
   background-color: rgba(242, 95, 42, 0.86);
 
   border-radius: 5px;
 }
+
 .gbtn {
   color: white;
   background-color: rgb(57, 127, 241);
 
   border-radius: 5px;
 }
+
 .head {
   font-size: 130%;
   font-weight: 700;
 }
+
 .c {
   text-align: center;
 }
+
 .svg {
   margin-top: 60px;
 }

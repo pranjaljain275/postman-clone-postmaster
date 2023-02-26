@@ -26,8 +26,15 @@ async function login(event) {
       },
     });
     let data = await res.json();
-    alert("login Success");
-    window.location = "../index.html";
+    if (data.token) {
+      // Store the access token in the session storage
+      sessionStorage.setItem('token', data.token);
+      alert("login Success");
+      window.location = "index.html";
+    } else {
+      alert("Login failed. Please try again.");
+    }
+    window.location = "index.html";
   } catch (err) {
     console.log("err", err);
   }

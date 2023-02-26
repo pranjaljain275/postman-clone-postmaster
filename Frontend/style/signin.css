@@ -4,12 +4,17 @@
   padding-top: 10px;
   padding-bottom: 50px;
 }
+
 .part {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   width: 30%;
   margin: auto;
   padding: 70px 40px 20px 40px;
   background-color: white;
+}
+
+button {
+  cursor: pointer;
 }
 
 input {
@@ -20,10 +25,12 @@ input {
   border-radius: 6px;
   font-size: larger;
 }
+
 input:focus {
   outline: none !important;
   border: 1px solid rgb(241, 90, 34);
 }
+
 button {
   width: 100%;
   padding: 15px 0px 15px 0px;
@@ -31,40 +38,48 @@ button {
   font-size: 120%;
   border: 0px solid rgb(241, 90, 34);
 }
+
 .btn {
   color: white;
   background-color: rgb(242, 107, 58);
 
   border-radius: 5px;
 }
+
 .gbtn {
   color: white;
   background-color: rgb(57, 127, 241);
 
   border-radius: 5px;
 }
+
 .head {
   font-size: 140%;
   font-weight: 700;
 }
+
 .c {
   text-align: center;
 }
+
 .logo {
   position: relative;
   top: 75px;
   left: 46%;
 }
-.part > div {
+
+.part>div {
   display: flex;
   justify-content: space-between;
   border: 0px solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.part > div > a {
+
+.part>div>a {
   align-self: center;
 }
+
 a {
   text-decoration: none;
   color: rgb(57, 127, 241);

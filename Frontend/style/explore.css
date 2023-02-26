@@ -2,27 +2,37 @@ section {
   margin: auto;
   width: 85%;
 }
+
+body {
+  margin: 0;
+}
+
 button {
   cursor: pointer;
 }
+
 .explore {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px auto;
 }
+
 .explore div:last-child {
   width: 85%;
 }
+
 .explore img {
   width: 100%;
   height: 300px;
 }
+
 .explore h1 {
   font-size: 30px;
   letter-spacing: 0.5px;
   margin: 16px auto;
 }
+
 .explore p {
   font-size: 20px;
   line-height: 28px;
@@ -33,6 +43,7 @@ button {
   display: flex;
   align-items: baseline;
 }
+
 .boxfix {
   box-sizing: content-box;
   padding: 32px 0;
@@ -40,13 +51,16 @@ button {
   top: -10px;
   margin-right: 40px;
 }
-.boxfix > div {
+
+.boxfix>div {
   margin: 40px 0;
   border-bottom: 0.25px solid #cacaca;
 }
-.boxfix > div:last-child {
+
+.boxfix>div:last-child {
   border-bottom: none;
 }
+
 .boxfix h2 {
   font-size: 14px;
   padding: 8px;
@@ -54,12 +68,15 @@ button {
   margin-bottom: 12px;
   cursor: pointer;
 }
+
 .boxfix h2:hover {
   background-color: #fff1eb;
 }
+
 #bgcolor {
   background-color: #fff1eb;
 }
+
 .boxfix h3 {
   font-size: 14px;
   padding: 8px;
@@ -68,16 +85,19 @@ button {
   cursor: pointer;
   color: #000;
 }
+
 .boxfix h4 {
   font-size: 14px;
   padding: 8px;
   font-weight: 300;
 }
+
 .boxfix p {
   padding: 8px;
   font-size: 13px;
   color: rgb(107, 107, 107);
 }
+
 .boxfix button {
   border-radius: 4px;
   font-size: 13px;
@@ -87,6 +107,7 @@ button {
   margin-top: 10px;
   margin-left: 6px;
 }
+
 .main {
   margin: 0 20px;
 }
@@ -95,20 +116,24 @@ button {
 .popular {
   margin-bottom: 80px;
 }
+
 .popular h1 {
   margin-bottom: 14px;
   font-size: 18px;
 }
-.popular > p {
+
+.popular>p {
   color: rgb(107, 107, 107);
   font-size: 16px;
 }
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, 450px);
   gap: 20px;
   margin-top: 36px;
 }
+
 .box {
   display: flex;
   align-items: flex-start;
@@ -116,9 +141,11 @@ button {
   border: 1px solid #d0d0d0;
   cursor: pointer;
 }
+
 .box:hover {
   background-color: #f9f9f9;
 }
+
 .box img {
   width: 40px;
   height: 40px;
@@ -127,24 +154,29 @@ button {
   background-color: #f9f9f9;
   margin-right: 20px;
 }
+
 .box h2 {
   font-size: 14px;
   color: rgb(33, 33, 33);
   margin-bottom: 14px;
   letter-spacing: 0.5px;
 }
+
 .box p {
   font-size: 12px;
   color: #6b6b6b;
   margin-bottom: 14px;
   letter-spacing: 0.5px;
 }
-.box > div > h2 + p:hover {
+
+.box>div>h2+p:hover {
   text-decoration: underline;
 }
+
 .box div div {
   display: flex;
 }
+
 .box div div p {
   margin-right: 30px;
 }
@@ -153,11 +185,13 @@ button {
 .trendAPI {
   margin-bottom: 80px;
 }
+
 .trendAPI h1 {
   margin-bottom: 14px;
   font-size: 18px;
 }
-.trendAPI > p {
+
+.trendAPI>p {
   color: rgb(107, 107, 107);
   font-size: 16px;
 }
@@ -166,14 +200,17 @@ button {
 .curated {
   margin-bottom: 80px;
 }
+
 .curated h1 {
   margin-bottom: 14px;
   font-size: 18px;
 }
-.curated > p {
+
+.curated>p {
   color: rgb(107, 107, 107);
   font-size: 16px;
 }
+
 .team {
   display: flex;
   align-items: center;
@@ -182,21 +219,25 @@ button {
   cursor: pointer;
   background-color: #f9f9f9;
 }
+
 .team div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .team img {
   width: 30%;
   margin-left: 10px;
 }
+
 .team h2 {
   font-size: 15px;
   color: rgb(33, 33, 33);
   margin: 6px 0;
   letter-spacing: 0.5px;
 }
+
 .team p {
   font-size: 14px;
   color: #6b6b6b;
@@ -210,11 +251,13 @@ button {
 .collection {
   margin-bottom: 80px;
 }
+
 .collection h1 {
   margin-bottom: 14px;
   font-size: 18px;
 }
-.collection > p {
+
+.collection>p {
   color: rgb(107, 107, 107);
   font-size: 16px;
 }
@@ -223,30 +266,36 @@ button {
 .domain {
   margin-bottom: 80px;
 }
+
 .domain h1 {
   margin-bottom: 14px;
   font-size: 18px;
 }
-.domain > p {
+
+.domain>p {
   color: rgb(107, 107, 107);
   font-size: 16px;
 }
+
 .domain>div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 20px;
   margin-top: 36px;
 }
+
 .domain>div>div {
   display: flex;
   align-items: center;
 }
+
 .domain>div>div h2 {
   font-size: 15px;
   border-bottom: 1px solid #cacaca;
   width: 80%;
   padding-bottom: 10px;
 }
+
 .domain>div>div img {
   width: 10%;
   margin-right: 16px;
@@ -256,17 +305,21 @@ button {
 .network {
   margin-bottom: 80px;
 }
+
 .network h1 {
   margin-bottom: 14px;
   font-size: 18px;
 }
+
 .network .container {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 200px);
 }
+
 .network .box {
   flex-direction: column;
 }
+
 .network .box img {
   margin-bottom: 20px;
 }

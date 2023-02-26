@@ -4,10 +4,16 @@
   padding: 0;
   font-family: 'Poppins', sans-serif;
 }
+
+img {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
+
 .navbar input {
   padding: 8px 18px;
   height: 20px;
@@ -17,17 +23,22 @@ a {
   border-radius: 4px;
   font-size: 14px;
 }
+
 .navbar i {
   margin-right: 28px;
   cursor: pointer;
 }
+
 .navbar button {
   padding: 8px 26px;
   border: none;
+  cursor: pointer;
 }
+
 .navbar button:hover {
   background-color: rgb(205, 205, 205);
 }
+
 .navbar {
   display: flex;
   align-items: center;
@@ -35,24 +46,29 @@ a {
   padding: 4px 16px;
   border-bottom: 1px solid rgb(224, 222, 222);
 }
-.navbar div{
+
+.navbar div {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* width: max-content; */
 }
+
 .navbar>div:first-child {
   width: 40%;
 }
+
 .navbar div img {
   width: 8%;
 }
+
 .navbar div h2 {
   font-size: 15px;
   font-weight: 200;
   padding: 8px;
   cursor: pointer;
 }
+
 .navbar div h2:hover {
   background-color: rgb(231, 231, 231);
 }
@@ -64,35 +80,43 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+
 .content {
   display: flex;
   justify-content: space-between;
 }
-.footer > div:first-child {
+
+.footer>div:first-child {
   display: flex;
   flex-direction: column;
 }
-.footer > div:first-child p {
+
+.footer>div:first-child p {
   margin: 30px 0;
   color: rgb(107, 107, 107);
 }
+
 .footer img {
   width: 60%;
 }
+
 .content div {
   margin: 0 40px;
 }
+
 .content div h2 {
   font-size: 16px;
   margin: 14px 0;
   color: rgb(107, 107, 107);
 }
+
 .content div p {
   margin: 20px 0;
   color: rgb(107, 107, 107);
   font-size: 14px;
   cursor: pointer;
 }
+
 .content div p:hover {
   text-decoration: underline;
 }
