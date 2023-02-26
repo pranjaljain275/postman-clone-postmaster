@@ -27,7 +27,8 @@
     margin: auto;
     display: flex;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-top: 10px;
   }
 
   button {
@@ -48,12 +49,13 @@
 
   .div1 {
     position: sticky;
+    /* border: 1px solid red; */
   }
 
   .div1a {
-    width: 80%;
-    background-color: #f9f9f9;
+    width: 90%;
     text-align: center;
+    margin-right: 15px;
   }
 
   .div1a p {
@@ -65,9 +67,6 @@
     height: 30px;
   }
 
-  .div1b {
-    background-color: #f9f9f99c;
-  }
 
   .div1b {
     display: grid;
@@ -91,13 +90,10 @@
     grid-template-columns: repeat(1fr);
     text-decoration: none;
     color: rgb(39, 37, 37);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 5px;
   }
 
-  .div2 {
-    margin-right: 175px;
-  }
 
   .div2 h2 {
     font-size: 14px;
@@ -135,36 +131,73 @@
   }
 
   .div2b {
-    display: grid;
-    grid-template-columns: repeat(auto, 250px);
-    padding: 18px 16px 12px 16px;
-    border: 1px solid #f9f9f9;
+    display: flex;
+    width: auto;
+    height: 300px;
+  }
+
+  .div2b div {
+    margin-right: 30px;
+    justify-content: space-between;
+  }
+
+  .div2a button {
+    border: none;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
     cursor: pointer;
-    height: 400px;
-    width: 250px;
+    overflow: hidden;
   }
-  .div3a h3{
-    padding-bottom: 25px;
+
+  .div2b-1 h2 {
+    padding-bottom: 8px;
   }
-  .div3a p{
+
+  .div2b-1 p {
+    padding-bottom: 8px;
+  }
+
+  .div2b-1 button {
+    color: blue;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .div3 h1 {
+    padding-bottom: 20px;
+  }
+
+  .div3 div {
+    padding-bottom: 40px;
+  }
+
+  .div3a p {
     padding-bottom: 15px;
     padding-top: 8px;
     color: #6b6b6b;
     font-size: 12px;
   }
-  .div3a button{
+
+  .div3a button {
     height: 28px;
     padding-bottom: 15px;
     text-align: center;
+    color: blue;
+    border: none;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
   }
 
   .div3 div {
     padding-bottom: 80px;
   }
 
-  .div3b {
-    background-color: #f9f9f9;
-  }
 
   .div4 {
     margin-bottom: 80px;
@@ -251,9 +284,9 @@
         </div>
         <!-- <hr> -->
         <div class="div1b">
-          <a href="">Workspaces</a>
-          <a href="">API governance</a>
-          <a href="">API security</a>
+          <a href="./dashboard.html">Workspaces</a>
+          <a href="./api_network.html">API governance</a>
+          <a href="./api_network.html">API security</a>
           <a href="">Integrations</a>
           <a href="">Reports</a>
         </div>
@@ -304,7 +337,7 @@
             Studio Code extension that brings Postman features...
             to your favorite source code editor.
           </p>
-          <button>Sign Up</button>
+          <button onclick="signup()">Sign Up</button>
         </div>
         <h1>Activity Feed</h1>
         <div class="div3b">
@@ -447,3 +480,8 @@
 </body>
 
 </html>
+<script>
+  function signup() {
+    window.open("./signup.html")
+  }
+</script>
