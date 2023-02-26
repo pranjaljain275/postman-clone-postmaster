@@ -4,7 +4,7 @@ document.querySelector(".gbtn").addEventListener("click", auth);
 async function auth(event) {
   event.preventDefault();
 
-  window.location = "http://localhost:7575/auth/google";
+  window.location = "https://good-lime-meerkat-suit.cyclic.app/auth/google";
 
   // let res=await fetch("http://localhost:7575/auth/google")
 }
@@ -26,7 +26,7 @@ async function register(event) {
       email,
       password,
     };
-    let regurl = "http://localhost:7575/user/signup";
+    let regurl = "https://good-lime-meerkat-suit.cyclic.app/user/signup";
 
     let res = await fetch(regurl, {
       method: "POST",

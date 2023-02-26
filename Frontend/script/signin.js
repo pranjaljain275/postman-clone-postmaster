@@ -16,7 +16,7 @@ async function login(event) {
       password,
     };
 
-    let logurl = "http://localhost:7575/user/login";
+    let logurl = "https://good-lime-meerkat-suit.cyclic.app/user/login";
 
     let res = await fetch(logurl, {
       method: "POST",

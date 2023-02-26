@@ -3,6 +3,7 @@ const cors = require("cors");
 const { connection } = require("./Config/db");
 const { userRouter } = require("./Routes/user.Roter");
 const { passport } = require("./Config/google-oauth");
+const { postman } = require('./Routes/postman.router')
 require("dotenv").config()
 const app = express();
 const port = 7575;
@@ -14,6 +15,8 @@ const filePath = path.join(
   "index.html"
 );
 app.use(cors());
+app.use(express.json())
+app.use(postman)
 // app.use(express.static(__dirname +   "..",
 // "Frontend",
 // "signup&login",
@@ -49,5 +52,5 @@ app.listen(process.env.port, async () => {
   } catch (err) {
     console.log("Not connected to db");
   }
-  console.log(`Server is at Port: ${port}`);
+  console.log(`Server is at Port: ${process.env.port}`);
 });
