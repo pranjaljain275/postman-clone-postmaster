@@ -12,10 +12,10 @@ a {
   padding: 8px 18px;
   height: 20px;
   width: 150px;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(245, 244, 244);
   border: 1px solid rgb(195, 193, 193);
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .navbar i {
   margin-right: 28px;
