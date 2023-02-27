@@ -1,5 +1,5 @@
 # postman-clone
-* Postman is an incredible tool for testing API's, you can make GET and POST request, you can add an different query params, click send
+* Postman is an incredible tool for testing API's, you can make GET and POST and PUT and PATCH and DELETE request, you can add an different query params, click send
   and its gonna give you information about the request status time and size.
 
 * We use fetch which allow us to make all different API request, also we use dev dependancy called nodemon which bundle all our different node modules
