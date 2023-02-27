@@ -55,29 +55,25 @@ async function runFunction() {
       if (response.ok) {
         if (method == "DELETE") {
           // Make another GET request to get the updated data
+          if (response.ok) {
+            var dava = await response.json();
+            dava = JSON.stringify(dava, null, 2)
+          }
           showdata(
             response,
-            "Successfully deleted the resource.",
+            dava,
             endTime - startTime,
             dataSize
           );
-          let getResponse = await fetch(url, {
-            method: "GET",
-            headers: { "Content-type": "application/json" },
-          });
-          if (getResponse.ok) {
-            let data = await getResponse.json();
-            data = JSON.stringify(data, null, 2); // using indentation of 2 spaces
-            showdata(getResponse, data, endTime - startTime, dataSize);
-          } else {
-            console.log(
-              `Error: ${getResponse.status} ${getResponse.statusText}`
-            );
-          }
+
         } else {
+          if (response.ok) {
+            var dava = await response.json();
+            dava = JSON.stringify(dava, null, 2)
+          }
           showdata(
             response,
-            "Successfully updated the resource.",
+            dava,
             endTime - startTime,
             dataSize
           );
