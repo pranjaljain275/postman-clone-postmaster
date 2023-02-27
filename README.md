@@ -29,7 +29,7 @@
 
 ## Key Features
 
-- Make GET and POST Request
+- Make GET and POST Request and PUT and PATCH and DELETE
 - Send JSON in the body
 - View response of a request
 - View the status code, response time, and response size.
