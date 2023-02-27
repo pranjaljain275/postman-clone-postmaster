@@ -1,7 +1,9 @@
 # postman-clone
 <img style="text-align:center" src="https://user-images.githubusercontent.com/81709725/131958479-851518ec-f4a0-46ed-9475-beb933bccefc.png"/>
 
-#
+## postman-clone
+![home-page](https://user-images.githubusercontent.com/115222789/221504151-151145c4-94a3-45bf-b6be-ef140a4a5f8e.png)
+
 
 * Postman is an incredible tool for testing API's, you can make GET and POST request, you can add an different query params, click send
   and its gonna give you information about the request status time and size.
